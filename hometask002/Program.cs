@@ -9,17 +9,17 @@ Console.WriteLine("Введите число B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 if(numberA > numberB)
 {
-    Console.WriteLine("Первое число "+numberA+" больше второго числа "+numberB);
+    Console.WriteLine("max = " +numberA+ " - Первое число "+numberA+" больше второго числа "+numberB);
 }
 else
 {
     if(numberA == numberB)
     {
-        Console.WriteLine("Числ равны между собой");
+        Console.WriteLine("Числа равны между собой");
     }
     else
     {
-        Console.WriteLine("Второе число "+numberB+" больше первого числа "+numberA);
+        Console.WriteLine("max = " +numberB+ " - Второе число "+numberB+" больше первого числа "+numberA);
     }
     
     
