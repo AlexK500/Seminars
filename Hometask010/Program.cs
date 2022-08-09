@@ -3,6 +3,6 @@
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
-Console.WriteLine("Введите трёхзначное число: ");
+Console.Write("Введите трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(((number-(number%10))%100)/10);
+Console.WriteLine(((Math.Abs(number)-(Math.Abs(number)%10))%100)/10);
