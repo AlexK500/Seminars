@@ -3,25 +3,19 @@
 // 4 -> 24
 // 5 -> 120
 
-Console.WriteLine("Введите число: ");
+Console.Write("Введите число:\t");
 int n = Convert.ToInt32(Console.ReadLine());
-// int result = 1;
-// int i = 1;
-// while(i<=n)
-// {
-//     result=result*i;
-//     i++;
-// }
-// Console.Write(result);
+Console.Write($"{n} => {ArrayCom(n)}");
 
-int[] array = new int [n];
-int result = 1;
-for(int i=0; i<n; i++)
+
+int ArrayCom(int n)
 {
-    array[i] = i+1;
-    result =result*array[i];
+    int[] array = new int[n];
+    int result = 1;
+    for (int i = 0; i < n; i++)
+    {
+        array[i] = i + 1;
+        result = result * array[i];
+    }
+    return result;
 }
-foreach(int e in array)
-Console.Write($"{e}, ");
-Console.Write("");
-Console.WriteLine($" => {result}");
