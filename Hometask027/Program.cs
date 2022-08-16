@@ -13,4 +13,4 @@ string str = Convert.ToString(numStr); // конвертация в текст
 int result = (Convert.ToInt32(str.Substring(0, 1)))*x; // первую цифру приводим к знаку(+/-) вводимого числа
 for (int i = 1; i < str.Length; i++) 
     result = result + Convert.ToInt32(str.Substring(i, 1)); // прибавляем остальные цифры
-Console.Write(result);
+Console.Write($"Сумма цифр равна: {result}");
