@@ -11,7 +11,9 @@ for (int i = 0; i < myArray.Length; i++)
     Console.Write($"Введите элемент массива под индехом {i}:\t");
     myArray[i] = Convert.ToInt32(Console.ReadLine());
 }
-Console.Write("[");
-for (int i = 0; i < myArray.Length - 1; i++)
-    Console.Write($" {myArray[i]}, ");
-Console.Write($" {myArray[myArray.Length - 1]}]");
+Console.Write('[' + String.Join(", ", myArray) +']');
+
+// Console.Write("[");
+// for (int i = 0; i < myArray.Length - 1; i++)
+//     Console.Write($" {myArray[i]}, ");
+// Console.Write($" {myArray[myArray.Length - 1]}]");
